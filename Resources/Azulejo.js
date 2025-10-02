@@ -1,8 +1,9 @@
 
 document.addEventListener("DOMContentLoaded", function(){
       var btncalcular = document.getElementById("btn-calcular")
-
+         //Creamos un evento click para el botón calcular
        btncalcular.addEventListener("click", function(){
+         //Obtenemos los valores de los inputs largo, ancho y precio por pieza
          var precioPieza=parseFloat(document.getElementById("input-precio").value)
          var largo =parseFloat(document.getElementById("input-largo").value)
          var ancho = parseFloat(document.getElementById("input-ancho").value)
@@ -19,7 +20,6 @@ document.addEventListener("DOMContentLoaded", function(){
             "\nLa cantidad de azulejos necesarios es: " + cantidad
             +"\nEl precio total es: " + precioTotal + "$"
          )
-         
          
       })
    
